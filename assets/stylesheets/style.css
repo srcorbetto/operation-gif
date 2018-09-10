@@ -6,18 +6,20 @@
 
 .image-holder {
     min-height: 100vh;
-    background: pink;
+    background: #f6f6f6;
     padding: 0;
+    text-align: center;
 }
 
 .main-image {
-    width: 100%;
+    max-width: 100%;
     padding: 15px;
+    max-height: 600px;
 }
 
 .gif-holder {
     min-height: 100vh;
-    background: blue;
+    background: #424651;
     padding: 0;
 }
 
@@ -36,4 +38,12 @@
     width: 100%;
     padding: 15px;
     background: rgba(0, 0, 0, 0.5);
+}
+
+.form-group {
+    width: 70%;
+}
+
+input {
+    width: 100% !important;
 }
