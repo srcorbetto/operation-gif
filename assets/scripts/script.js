@@ -31,15 +31,15 @@ $('.search-api').on('click', function(e){
 });
 
 // Replacing main-image background
-const uploadImage = (query) => {
+const searchImage = (query) => {
   $('.main-image').attr('src', query)
 }
 
 //Grab ImgURL and run uploadImage
-$('.submit-main-image-url').on('click', function(e){
+$('.search-main-image-url').on('click', function(e){
   e.preventDefault();
   let input = $('.main-image-url');
   let inputValue = input[0].value;
 
-  uploadImage(inputValue);
+  searchImage(inputValue);
 })
