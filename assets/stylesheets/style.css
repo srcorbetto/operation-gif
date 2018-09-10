@@ -21,6 +21,17 @@
     padding: 0;
 }
 
+.stickers {
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+}
+
+.sticker {
+    padding: 10px;
+    max-width: 48%;
+}
+
 .search-holder {
     width: 100%;
     padding: 15px;
