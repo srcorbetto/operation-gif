@@ -1,0 +1,1 @@
+import searchAPI from './sticker';
