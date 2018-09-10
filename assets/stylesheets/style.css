@@ -1,0 +1,39 @@
+.bg {
+    width: 100%;
+    min-height: 100vh;
+    background: #f6f6f6;
+}
+
+.image-holder {
+    min-height: 100vh;
+    background: pink;
+    padding: 0;
+}
+
+.main-image {
+    width: 100%;
+    padding: 15px;
+}
+
+.gif-holder {
+    min-height: 100vh;
+    background: blue;
+    padding: 0;
+}
+
+.stickers {
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+}
+
+.sticker {
+    padding: 10px;
+    max-width: 48%;
+}
+
+.search-holder {
+    width: 100%;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.5);
+}
