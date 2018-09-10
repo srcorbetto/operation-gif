@@ -1,6 +1,6 @@
 // Defining our default API search paramater values
 const param1 = 'https://api.giphy.com/v1/stickers/search?api_key=YStVAFMdiq2NVtpZWMDY3jmkUzJYEEhO&q=';
-const param2 = '&limit=100&offset=0&rating=PG-13&lang=en';
+const param2 = '&limit=25&offset=0&rating=PG-13&lang=en';
 
 // Defining our API call
 const searchApi = (query) => {
@@ -15,7 +15,8 @@ const searchApi = (query) => {
         let sticker = $('<img>');
         sticker.attr('class', 'sticker');
         sticker.attr('src', results[i].images.original.url);
-        $('.stickers').append(sticker)
+        $('.sticker').draggable();
+        $('.stickers').prepend(sticker)
       }
     });
 }
@@ -23,10 +24,8 @@ const searchApi = (query) => {
 // Calling the searchApi function on the value of the input, on button click
 $('.search-api').on('click', function(e){
   e.preventDefault();
-  $('.stickers').html('');
   let input = $('.search-api-form');
   let inputValue = input[0].value;
-
   searchApi(inputValue)
 });
 
